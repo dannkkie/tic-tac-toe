@@ -25,3 +25,10 @@ puts ' '
 puts " [ 7 ][ 8 ][ 9 ] "
 puts " [ 7 ][ 8 ][ 9 ] "
 #display grid function ends here
+
+#implement logic to select current player
+puts "choose a number between 1 and 9"
+#validate the input to ensure only 1 to 9 is selected
+#display X or O on board grid
+#keep changing player turns until win or draw
+#end game
