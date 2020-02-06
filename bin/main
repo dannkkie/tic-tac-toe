@@ -1,3 +1,16 @@
 #!/usr/bin/env ruby
 
-puts "Hello world"
+# frozen_string_literal: true
+
+# Welcome Message
+puts "Ruby Tic Tac Toe"
+
+# Request for player names and save them to p1 and p2
+print "Player 1 please enter your name: "
+p1 = gets.chomp
+
+print "Player 2 please enter your name: "
+p2 = gets.chomp
+
+puts "\n\n#{p1} will be presented by X"
+puts "#{p2} will be presented by O\n\n"
