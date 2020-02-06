@@ -14,3 +14,14 @@ player2 = gets.chomp
 
 puts "\n\n#{player1} will be presented by X"
 puts "#{player2} will be presented by O\n\n"
+
+#display the board grid
+#hard code for now but will be dynamic during final implementation
+#inside display grid function
+puts " [ 1 ][ 2 ][ 3 ] "
+puts '  '
+puts " [ 4 ][ 5 ][ 6 ] "
+puts ' '
+puts " [ 7 ][ 8 ][ 9 ] "
+puts " [ 7 ][ 8 ][ 9 ] "
+#display grid function ends here
