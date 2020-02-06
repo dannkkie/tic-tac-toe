@@ -7,10 +7,10 @@ puts "Ruby Tic Tac Toe"
 
 # Request for player names and save them to p1 and p2
 print "Player 1 please enter your name: "
-p1 = gets.chomp
+player1 = gets.chomp
 
 print "Player 2 please enter your name: "
-p2 = gets.chomp
+player2 = gets.chomp
 
-puts "\n\n#{p1} will be presented by X"
-puts "#{p2} will be presented by O\n\n"
+puts "\n\n#{player1} will be presented by X"
+puts "#{player2} will be presented by O\n\n"
