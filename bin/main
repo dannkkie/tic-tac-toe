@@ -6,6 +6,8 @@
 puts "Ruby Tic Tac Toe"
 
 # Request for player names and save them to p1 and p2
+# refactor player = { player1: :X , player2: :O } 
+# @players = { 'X' => nil, 'O' => nil } 
 print "Player 1 please enter your name: "
 player1 = gets.chomp
 
@@ -22,7 +24,6 @@ puts " [ 1 ][ 2 ][ 3 ] "
 puts '  '
 puts " [ 4 ][ 5 ][ 6 ] "
 puts ' '
-puts " [ 7 ][ 8 ][ 9 ] "
 puts " [ 7 ][ 8 ][ 9 ] "
 #display grid function ends here
 
