@@ -1,3 +1,33 @@
 #!/usr/bin/env ruby
 
-puts "Hello world"
+# frozen_string_literal: true
+
+# Welcome Message
+puts "Ruby Tic Tac Toe"
+
+# Request for player names and save them to p1 and p2
+print "Player 1 please enter your name: "
+player1 = gets.chomp
+
+print "Player 2 please enter your name: "
+player2 = gets.chomp
+
+puts "\n\n#{player1} will be presented by X"
+puts "#{player2} will be presented by O\n\n"
+
+#display the board grid
+#hard code for now but will be dynamic during final implementation
+#inside display grid function
+puts " [ 1 ][ 2 ][ 3 ] "
+puts '  '
+puts " [ 4 ][ 5 ][ 6 ] "
+puts ' '
+puts " [ 7 ][ 8 ][ 9 ] "
+#display grid function ends here
+
+#implement logic to select current player
+puts "choose a number between 1 and 9"
+#validate the input to ensure only 1 to 9 is selected
+#display X or O on board grid
+#keep changing player turns until win or draw
+#end game
