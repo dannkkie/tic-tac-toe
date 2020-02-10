@@ -39,4 +39,21 @@ class GameLogic
   def board_index(input_index)
     input_index.to_i - 1
   end
+
+  def valid_move?(arr_pos)
+    arr_pos.between?(0, 8) && !space_filled?(arr_pos)
+  end
+
+  def turn_count
+    @board.select { |e| e == 'X' || e == 'O' }.size
+  end
+
+  def current_player
+    player = if (turn_count % 2).zero?
+               'X'
+             else
+               'O'
+             end
+    player
+  end
 end
