@@ -80,3 +80,8 @@ class Main
         puts "\n\nGame Ended..Bye..\n\n"
     end
 end
+
+main = Main.new
+
+main.start
+main.play
