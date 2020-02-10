@@ -42,4 +42,13 @@ class Main
     
         puts "       [#{@board[6]}]  [#{@board[7]}]  [#{@board[8]}] "
     end
+
+    def choose_position
+        current = @game.current_player
+        if current == 'X'
+          print "\n #{@player1.name}, choose a position between 1-9: "
+        else
+          print "\n #{@player2.name}, choose a position between 1-9: "
+        end
+    end
 end
