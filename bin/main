@@ -6,5 +6,11 @@ require_relative '../lib/game_logic.rb'
 require_relative '../lib/player.rb'
 
 class Main 
+    def initialize
+        @game = GameLogic.new
     
+        @board = @game.init_board(9)
+        @player1 = Player.new
+        @player2 = Player.new
+      end
 end
