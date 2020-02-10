@@ -64,4 +64,19 @@ class Main
           turn
         end
     end
+
+    def play
+        turn until @game.over?
+        if @game.won?
+          if @board[@game.won?.first] == 'X'
+            puts "\n#{@player1.name} Wins!"
+          else
+            puts "\n#{@player2.name} Wins!"
+          end
+        elsif @game.draw?
+          puts "\nIt's a draw!"
+        end
+    
+        puts "\n\nGame Ended..Bye..\n\n"
+    end
 end
