@@ -51,4 +51,17 @@ class Main
           print "\n #{@player2.name}, choose a position between 1-9: "
         end
     end
+
+    def turn
+        choose_position
+        spot = gets.strip
+        spot = @game.board_index(spot)
+        if @game.valid_move?(spot)
+          @game.set_input(spot, @game.current_player)
+          display_board
+        else
+          print "\nPlease enter a valid option between 1-9: \n"
+          turn
+        end
+    end
 end
