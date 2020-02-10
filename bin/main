@@ -12,5 +12,22 @@ class Main
         @board = @game.init_board(9)
         @player1 = Player.new
         @player2 = Player.new
-      end
+    end
+
+    def start
+        puts "\nWelcome to Tic Tac Toe\n\n"
+    
+        print 'Player 1 please enter your name: '
+        @player1.name = gets.chomp
+        @player1.assigned_character = 'X'
+    
+        print "\nPlayer 2 please enter your name: "
+        @player2.name = gets.chomp
+        @player2.assigned_character = 'O'
+    
+        puts "\nPlayer 1: #{@player1.name}, Will Be: #{@player1.assigned_character}"
+        puts "Player 2: #{@player2.name}, Will Be: #{@player2.assigned_character}\n"
+    
+        display_board
+    end
 end
