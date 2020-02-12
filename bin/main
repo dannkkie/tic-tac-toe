@@ -77,6 +77,4 @@ def play
 
     puts "\n\nGame Ended..Bye..\n\n"
 end
-
-start
-play
+  
