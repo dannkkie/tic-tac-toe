@@ -22,7 +22,7 @@ Tic-tac-toe (American English), noughts and crosses (British English), or Xs and
 
 You will be presented with the following screen. Since this is a console based game, every move will be simulated by keyiing in data.
 
-![screenshot](./instruction1.png)
+![screenshot](./instruction1.PNG)
 
 + Enter your player name, and let the other player enter their player name too
 + The game automatically assigns the first player the X token and the second player the O token
