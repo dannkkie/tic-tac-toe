@@ -13,7 +13,7 @@
 
 To play Tic-Tac-Toe:
 
--   Clone or download this project [from github](https://github.com/dannkkie/tic-tac-toe) using git clone https://github.com/dannkkie/tic-tac-toe
+-   Clone or download(zip) this project [from github](https://github.com/dannkkie/tic-tac-toe) using git clone https://github.com/dannkkie/tic-tac-toe
 - 	Open a terminal window and go to game folder (cd ../Ruby_TicTacToe/)   
 -   Run the game, using command: main
 
