@@ -13,7 +13,7 @@ Tic-tac-toe (American English), noughts and crosses (British English), or Xs and
 -   Ruby
 
 ## Live Demo
--   You can use this link if and skip straight to playing instructions for those who are impatient.
+-   You can use this link if and skip straight to playing instructions for those who are impatient. Then hit the run button.
 [Live Demo Link](https://repl.it/@mosesmuchemi/tic-tac-toe)
 
 ## Getting Started
@@ -21,6 +21,7 @@ Tic-tac-toe (American English), noughts and crosses (British English), or Xs and
 -   Clone or download(zip) this project [from github](https://github.com/dannkkie/tic-tac-toe) using git clone https://github.com/dannkkie/tic-tac-toe
 
 ### Playing Instructions
+NOTE: for those on the live demo click run button otherwise for those using local environment continue with instructions below:
 
 - 	Open a terminal window and go to game folder (cd ../tic-tac-toe/)   
 -   Run the game, using command: bin/main
