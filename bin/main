@@ -1,3 +1,82 @@
 #!/usr/bin/env ruby
 
-puts "Hello world"
+# frozen_string_literal: true
+
+require_relative '../lib/game_logic.rb'
+require_relative '../lib/player.rb'
+
+# game initialization
+@game = GameLogic.new
+
+@board = @game.init_board(9)
+@player1 = Player.new
+@player2 = Player.new
+
+def start
+    puts "\nWelcome to Tic Tac Toe\n\n"
+
+    print 'Player 1 please enter your name: '
+    @player1.name = gets.chomp
+    @player1.assigned_character = 'X'
+
+    print "\nPlayer 2 please enter your name: "
+    @player2.name = gets.chomp
+    @player2.assigned_character = 'O'
+
+    puts "\nPlayer 1: #{@player1.name}, Will Be: #{@player1.assigned_character}"
+    puts "Player 2: #{@player2.name}, Will Be: #{@player2.assigned_character}\n"
+
+    display_board
+end
+
+def display_board
+    puts "\n       [#{@board[0]}]  [#{@board[1]}]  [#{@board[2]}] "
+
+    puts ' '
+
+    puts "       [#{@board[3]}]  [#{@board[4]}]  [#{@board[5]}] "
+
+    puts ' '
+
+    puts "       [#{@board[6]}]  [#{@board[7]}]  [#{@board[8]}] "
+end
+
+def choose_position
+    current = @game.current_player
+    if current == 'X'
+      print "\n #{@player1.name}, choose a position between 1-9: "
+    else
+      print "\n #{@player2.name}, choose a position between 1-9: "
+    end
+end
+
+def turn
+    choose_position
+    spot = gets.strip
+    spot = @game.board_index(spot)
+    if @game.valid_move?(spot)
+      @game.set_input(spot, @game.current_player)
+      display_board
+    else
+      print "\nPlease enter a valid option between 1-9: \n"
+      turn
+    end
+end
+
+def play
+    turn until @game.over?
+    if @game.won?
+      if @board[@game.won?.first] == 'X'
+        puts "\n#{@player1.name} Wins!"
+      else
+        puts "\n#{@player2.name} Wins!"
+      end
+    elsif @game.draw?
+      puts "\nIt's a draw!"
+    end
+
+    puts "\n\nGame Ended..Bye..\n\n"
+end
+
+start
+play
